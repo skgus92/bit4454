@@ -59,7 +59,7 @@ catch(Exception $e) {
 echo "<h3>Your're registered!</h3>";
 }
 
-$sql_select = "SELECT * FROM registration_tbl";
+$sql_select = "SELECT * FROM bit_tbl";
 $stmt = $conn->query($sql_select);
 $registrants = $stmt->fetchAll(); 
 if(count($registrants) > 0) {
